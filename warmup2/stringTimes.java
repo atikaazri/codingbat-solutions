@@ -1,7 +1,9 @@
 public String stringTimes(String str, int n) {
-  String news = "";
+
+  String newss = "";
   for (int i = 0; i<n; i++){
-    news+=str;
+    newss+=str;
   }
-  return news;
+
+  return newss;
 }
