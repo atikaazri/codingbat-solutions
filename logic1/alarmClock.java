@@ -1,0 +1,6 @@
+public String alarmClock(int day, boolean vacation) {
+  if((day ==0 || day == 6) &&  !vacation) return "10:00";
+  else if((day ==0 || day == 6) &&  vacation) return "off";
+  else if(!(day ==0 || day == 6) &&  vacation) return "10:00";
+  else return "7:00";
+}
