@@ -1,0 +1,18 @@
+public boolean twoTwo(int[] nums) {
+  if(nums.length<2){
+    for(int i =0; i<nums.length; i++){
+      if(nums[i]==2) return false;
+    }
+    return true;
+  }
+  for(int i =0; i<nums.length; i++){
+    if(nums[i] == 2){
+      if((i>0 && nums[i-1] == 2) || (i<nums.length-1 && nums[i+1] == 2) ){
+        continue;
+      }
+      else return false;
+    }
+  }
+  return true;
+  
+}
